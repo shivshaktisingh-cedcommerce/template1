@@ -1,0 +1,40 @@
+.outer{
+    width:100%;
+    height:700px;
+    background-color:grey;
+    float:left;
+}
+
+.inner{
+    margin-top:40px;
+    margin-left:100px;
+    width:80%;
+    height:600px;
+    
+    float:left;
+}
+table, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    padding:10px;
+  }
+.butt{
+    float:left;
+    margin-left:100px;
+}
+button {
+    border-radius:15px;
+    padding:10px;
+}
+#b1{
+    background-color: lightblue;
+    color:red;
+}
+#b2{
+    background-color: gray;
+    color:blue;
+}
+#b3{
+    background-color: lightblue;
+    color:red;
+}
