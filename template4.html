@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <script src="formage.js"></script>
+        <link rel="stylesheet" href="formage.css">
+    </head>
+    <body>
+       <div class="outer">
+         <div class="inner">
+            <table style="width:100%">
+               <tr>
+                 <td style="width:30%">Firstname</td>
+                 <td>
+                     <input type="text" id="fname" name="fname">
+                 </td> 
+                 
+               </tr>
+               
+               <tr>
+                 <td>Email:</td>
+                 <td>
+                    <input type="email" id="email" size="50" name="email">
+                 </td>
+                
+               </tr>
+               <tr>
+                <td>Password:</td>
+                <td>
+                   <input type="password" id="password">
+                </td>
+                
+              </tr>
+               <tr>
+                 <td>Approval Required:<br>click on the button or text to check/uncheck</td>
+                 <td>
+                  <input type="checkbox">Do you Approve?
+
+                 </td>
+                 
+               </tr>
+               <tr>
+                  <td>Pick your favourite:</td>
+                  <td>
+                     <input type="radio" name="choice">choice A<br>
+                     <input type="radio" name="choice">choice B<br>
+                     <input type="radio" name="choice">choice B<br>
+                  </td> 
+                  
+                </tr>
+                <tr>
+                  <td>Pop up menu:</td>
+                  <td>
+                    <select name="cars" id="cars">
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                    List:<br>setup options<br>
+                    <ul>
+                      <li>number of rows to display</li>
+                      <li>allow multi select></li>
+                    </ul>
+                  </td>
+                  <td>
+                    <textarea id="w3review" name="w3review" rows="5" cols="10">Delhi
+                      Mumbai
+                      Lucknow
+                      Kolkata
+                      Bangalore
+                    </textarea>
+                  </td>
+                 
+                </tr>
+                <tr>
+                  <td>Field ignored by km:</td>
+                  <td>
+                    <input type="text" id="km" name="km">
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>Text Area:</td>
+                  <td>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+                  </td> 
+                  
+                </tr>
+                
+             </table>
+
+       </div>
+       <div class="butt">
+          <button type="button" id="b1">Save</button>
+          <button type="button" id="b2">Cancel</button>
+          <button type="button" id="b3">Resize</button> 
+       </div>
+    </div>
+    </body>
+</html>
