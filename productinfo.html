@@ -1,7 +1,7 @@
 <html>
     <head>
-        <link rel="stylesheet" href="proinfo.css">
-        <script src="proinfo.js"></script>
+        <link rel="stylesheet" href="productinfo.css">
+        <script src="productinfo.js"></script>
     </head>
     <body onload="myFunction()">
         <div class="outer">
@@ -24,6 +24,32 @@
             </tbody>
             
         </table>
+        <select name="product" id="pro">
+            <option value="company" id="comp">company</option>
+            <option value="model" id="mod">model</option>
+            <option value="memory" id="mem">memory</option>
+            <option value="price"id="pri">price</option>
+          </select>
+            <input type="text" id="sea" placeholder="Search.." name="search">
+            <button onclick="myFunction1()">Search</button>
+            <table> 
+                <thead>
+                <tr>
+                    <th>company</th>
+                    <th>model</th>
+                    <th>memory(gb)</th>
+                    <th>price(rs)</th>
+                </tr>
+                </thead>
+                <tbody id="yoTable">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+                
+            </table>
         </div>
         </div>
     </body>
