@@ -20,7 +20,7 @@
     float:left;
 }
 h1{
-    margin-left:400px;
+    margin-left:500px;
   
 }
 h3{
@@ -39,7 +39,7 @@ h3{
     width:60%;
     height:250px;
     margin-top:15px;
-    margin-left:100px;
+    margin-left:150px;
     float:left;
     border:solid;
 }
@@ -47,7 +47,7 @@ h3{
     width:60%;
     height:230px;
     margin-top:20px;
-    margin-left:100px;
+    margin-left:150px;
     float:left;
     border:solid;
     border-bottom-left-radius: 20px;
@@ -57,20 +57,20 @@ h3{
     margin-top:20px;
 }
 h2{
-    margin-left:200px;
+    margin-left:330px;
 }
 label{
     margin-left:40px;
     
 }
 #adj{
-    margin-left:58px;
+    margin-left:60px;
 }
 #adv{
-    margin-left:71px;
+    margin-left:75px;
 }
 #cr{
-    margin-left:58px;
+    margin-left:60px;
 }
 button{
     border-radius:10px;
