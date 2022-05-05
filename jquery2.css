@@ -1,0 +1,28 @@
+th{
+    background-color: black;
+    color:white;
+    text-align:left;
+    
+}
+.outer{
+    width:100%;
+    height:500px;
+}
+.inner{
+    width:90%;
+    height:300px;
+    margin-left:60px;
+    margin-top:10px;
+}
+#th1{
+    width:350px;
+}
+#th2{
+    width:250px;
+}
+#th3{
+    width:250px;
+}
+#b1{
+    margin-left:200px;
+}
