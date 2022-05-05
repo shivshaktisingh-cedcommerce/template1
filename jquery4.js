@@ -11,8 +11,11 @@ $(document).ready(function(){
    
     
     $('#delete').click(function(){
-        //$('#myTable tr:last').remove();
-        $('#myTable tr').slice(-1).remove();
+        var rowCount = $('#myTable tr').length;
+        if(rowCount>1)
+        {
+            $('#myTable tr:last').remove();
+        }
     });
    
 });
