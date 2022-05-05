@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="jquery1.css">
+   <script src="jquery1.js"></script>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+      $('#password, #confirm_password').on('keyup', function () {
+      if ($('#password').val() == $('#confirm_password').val()) {
+      $('#message').html('Matching').css('color', 'green');
+      } else 
+      $('#message').html('Not Matching').css('color', 'red');
+      });
+   </script>
+  
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer">
+      <div class="inner">
+        <input type="password" id="password" placeholder="Password">
+        <br>
+        <input type="password" id="confirm_password" placeholder="Confirm Password">
+        <div class="message">
+        <p id="message"></p>
+        <p id="message1"></p>
+        </div>
+        <button onclick="checkPass()">Submit</button>
+      </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#confirm_password").on("keyup",function(){
+          if ($('#password').val() == $('#confirm_password').val()) {
+            $('#message').html('Matching').css('color', 'green');
+          } else 
+            $('#message').html('Not Matching').css('color', 'red');
+          
+          });
+        });
+
+    </script>
+    
+</body>
+</html>
