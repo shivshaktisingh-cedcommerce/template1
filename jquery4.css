@@ -1,0 +1,17 @@
+.outer{
+    width:100%;
+    background-color:lightcyan;
+    height:500px;
+    float:left;
+
+    }
+.inner{
+    width:80%;
+    
+    margin-top:30px;
+    
+    float:left;
+}
+table{
+    border:1px solid black;
+}
