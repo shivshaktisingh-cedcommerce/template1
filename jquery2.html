@@ -1,0 +1,69 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="jquery2.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+      </script>
+
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+                <button id="b1" >change color of even</button>
+
+                <button id="b2" >change color of odd</button>
+
+                <table>
+                    <tr>
+                        <th id="th1">Company</th>
+                        <th id="th2">Contact</th>
+                        <th id="th3">Country</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Flutterskie</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Flutterskie</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Flutterskie</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Flutterskie</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Flutterskie</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Flutterskie</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+        <script>
+
+        $(document).ready(function(){
+          $("#b1").click(function(){
+              $("tr:even").css("background-color", "lightgrey");
+            });
+        });
+        $(document).ready(function(){
+          $("#b2").click(function(){
+              $("tr:odd").css("background-color", "dodgerblue");
+            });
+        });
+        </script>
+    </body>
+</html>
