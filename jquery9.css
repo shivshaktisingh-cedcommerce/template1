@@ -1,0 +1,14 @@
+.outer{
+    width:100%;
+    background-color: antiquewhite;
+    height:300px;
+}
+p{
+    width:90%;
+    height:90px;
+    margin-left:40px;
+    margin-top:50px;
+    float:left;
+    font-size:15px;
+    color:black;
+}
