@@ -1,0 +1,22 @@
+.outer{
+    width:100%;
+    background-color: antiquewhite;
+    height:300px;
+}
+table{
+    margin-left:40px;
+    width:80%;
+    font-size:15px;
+    border:1px solid black;
+}
+select{
+    width:40%;
+    height:20px;
+    font-size:15px;
+}
+td{
+    text-align:center;
+}
+tr{
+    border:1px solid black;
+}
