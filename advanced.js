@@ -6,6 +6,7 @@ employee[3]={IdOfEmp:3,Name:"Yash",Salary:10000};
 
 function tableHeading(){
     var table = document.getElementById("displayHeadingTable");
+    
     table.innerHTML="";
     var row = displayHeadingTable.insertRow(displayHeadingTable.rows.length - 1);  
     var cell1 = row.insertCell(0);
@@ -27,8 +28,14 @@ function addEntriesByUser(){
     var idOfEmployeeEnteredByUser = document.getElementById("id1").value;
     var nameOfEmployeeEnteredByUser = document.getElementById("Name1").value;
     var salaryOfEmployeeEnteredByUser = document.getElementById("salary1").value;
-    tableHeading();
-    var row = displayTable.insertRow(displayTable.rows.length - 1);  
+    if((idOfEmployeeEnteredByUser=="" || nameOfEmployeeEnteredByUser=="" || salaryOfEmployeeEnteredByUser==""))
+    { alert("fields are empty");
+    return;
+     
+    }
+    
+     else{ tableHeading();
+    var row = displayTable.insertRow(displayTable.rows.length -1);  
     var cell1 = row.insertCell(0);
     cell1.innerHTML = idOfEmployeeEnteredByUser;
     
@@ -40,12 +47,15 @@ function addEntriesByUser(){
     
     var cell4 = row.insertCell(3);
     cell4.innerHTML = "<button id='delete' onclick='deleteRow(this)'>Delete</button>";
-      
-}
+     }
+}  
 function deleteRow(r) {
-   var i = r.parentNode.parentNode.rowIndex;
-   document.getElementById("displayTable").hidden(i);
- }
+  
+    var i = r.parentNode.parentNode.rowIndex;
+    document.getElementById("firstTask").deleteRow(i);
+  
+  
+}
 
 function objectcall(){
   class employee{
@@ -140,11 +150,14 @@ function errorH()
 
 
 function salaryPercentage(){
+  
   var table = document.getElementById("percentHeadingTable");
   table.innerHTML="";
+ 
   var row = percentHeadingTable.insertRow(percentHeadingTable.rows.length - 1);  
   var cell1 = row.insertCell(0);
   cell1.innerHTML = "ID";
+ 
 
   var cell2 = row.insertCell(1);
   cell2.innerHTML = "NAME";
@@ -160,9 +173,10 @@ function salaryPercentage(){
     salary = () => {
     return (15/100)*employee[i].Salary;
   }
-  var row = percentHeadingTable.insertRow(-1);  
+  var row = percentSalaryTable.insertRow(-1);  
   var cell1 = row.insertCell(0);
   cell1.innerHTML = employee[i].IdOfEmp;
+ 
 
   var cell2 = row.insertCell(1);
   cell2.innerHTML = employee[i].Name;
