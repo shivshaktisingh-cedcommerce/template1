@@ -59,10 +59,10 @@ $(document).ready(function(){
       $("#product_name").css("border", "1px solid black");
       $("#product_price").css("border", "1px solid black");
       $("#product_quantity").css("border", "1px solid black");
-     // $("#product_sku").val()="";
-     // $("#product_name").val()="";
-     // $("#product_price").val()="";
-     // $("#product_quantity").val()="";
+      $("#product_sku").val("");
+      $("#product_name").val("");
+      $("#product_price").val("");
+      $("#product_quantity").val("");
       product.push([productSku,productName,productprice,productQuantity]);
       
     }
