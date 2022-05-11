@@ -5,4 +5,31 @@ $(document).ready(function () {
         var txt = '<div id=' + products[i].id + ' class="product"><img src=' + products[i].image + '></img><h3 class="title"><a class="prodid" href="#">Product ' + products[i].id + '</a></h3><span>Price: $' + products[i].price + '.00</span><a class="add-to-cart"  pid="' + i + '" href="#">Add To Cart</a>';
         $("#products").append(txt);
     }
+    $(".add-to-cart").click(function () {
+            $("#empty1").attr("type", "button");
+            $("#Total").attr("type", "button");
+            $("#myTableHead").attr("style", "display:block");
+            var pid = $(this).attr("pid");
+            addToCart(pid);
+      });
+  
+    function addToCart(i) {
+       var temp= 0;
+
+       temp=$("#id" + i).attr("status");
+
+        if (temp != "exist") {
+            row = '<tr class="'+products[i].id+'"><td>' + products[i].id + '</td><td>' + products[i].name + '</td><td>' + products[i].price + '</td><td><input class="manual" status="exist" id="id' + i + '"type="text" value="1"></td><td><button onClick="deleteRow(this.id)" class="del" id=' + products[i].id + '>Delete</button>';
+            $("tbody").append(row);
+            
+         
+        }
+        else {
+      
+            var currentQuantity = $("#id" + i).val();
+            $("#id" + i).val(++currentQuantity);
+           
+       
+        }
+    }
 });
