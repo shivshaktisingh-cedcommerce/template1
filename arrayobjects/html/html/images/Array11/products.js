@@ -1,3 +1,4 @@
+
 var products = [{ "id": 101, "name": "Basket Ball", "image": "basketball.png", "price": 150 }, { "id": 102, "name": "Football", "image": "football.png", "price": 120 }, { "id": 103, "name": "Soccer", "image": "soccer.png", "price": 110 }, { "id": 104, "name": "Table Tennis", "image": "table-tennis.png", "price": 130 }, { "id": 105, "name": "Tennis", "image": "tennis.png", "price": 100 }];
 $(document).ready(function () {
 
@@ -32,4 +33,34 @@ $(document).ready(function () {
        
         }
     }
+    $("#Total").click(function(){
+        var total=0;
+        for(var xx=0;xx<products.length;xx++)
+      
+        {
+            if($("#id" + xx).val()!== undefined)
+            {    
+                var ff=products[xx].price;
+                    total+=$("#id" + xx).val()*ff;
+            }
+        }
+        $("#Total").val(total);
+
+    })
+    $("#empty1").click(function () {
+        $("#myTable").empty();
+    
+    });
+   
+
+    
 });
+function deleteRow(r){
+        // var ff=$(this).attr("id");
+         $("."+r).remove();
+}
+
+
+
+
+
