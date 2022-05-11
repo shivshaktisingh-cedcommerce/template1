@@ -1,0 +1,17 @@
+In this task , we have given a array by using the data inside we have to implement few operatios:
+
+
+Creating Table at run time:At every time when a user click on add to cart , called a function (add to cart) which has parameter which is passed dynamically during rendering all the products defined in array using loop.
+Using (i) and this keyword and attribute which is defined at rendering array data at client side  , stored an id into a variable which is passed to add to cart(id).
+Using that id i am first checking attribute(status) is exist or not , if status is not exist then i created a row and if it exist then changed only quantity and reflect it to HTML. 
+
+
+
+Manually changing Quantity:  stored the value which is given in input box using id of input box and reflect it back using same id.
+
+
+
+Empty the Cart:  To empty the cart used click function and id given to empty button and (id of table).empty() function.
+
+
+Delete the Row: To delete a row , passed an id when someone clicked on delete button and using that id removed that row. 
