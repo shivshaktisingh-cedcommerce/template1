@@ -1,0 +1,53 @@
+
+    * {
+        font-size: large;
+        font-weight: 400;
+    }
+    body{
+        background-color: grey;
+    }
+
+    table {
+        /* border: 1px; */
+        border-radius: 10px;
+        margin: auto;
+        width: 258px;
+        height: 300px;
+        background-color: #f2f3f8;
+        border-spacing: 0px;
+        border-collapse: collapse;
+   
+    }
+
+    tr {
+        /* background-color: ; */
+        text-align: center;
+    }
+    thead{
+        /* background-color: #f7060a; */
+        border-radius: 10px;
+    }
+
+    input {
+        width: 99%;
+        height: 75px;
+        text-align: right;
+        background-color: #f7060a;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        font-size: larger;
+        padding-right: 0px;
+        /* -webkit-animation: none; */
+       
+    }
+
+    button {
+        width: 75%;
+        height: 75%;
+        border: 0px;
+        background-color: white;
+    }
+    button{
+        border-radius: 20%;
+    }
