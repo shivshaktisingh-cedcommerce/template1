@@ -1,0 +1,68 @@
+#outer{
+    width:100%;
+    height:1300px;
+    background-color:lightcyan;
+    float:left;
+}
+#inner{
+    width:100%;
+    height:500px;
+    margin-top:20px;
+}
+.full{
+    width:40%;
+    background-color:white;
+    border-radius: 3px;
+  
+    height:30px;
+    
+}
+.half{
+    width:20%;
+    
+   
+}
+table{
+    margin-left:20px;
+    width:60%;
+}
+input{
+    width:100%;
+    height:25px;
+    border:none;
+    border-color:white;
+
+}
+textarea{
+    border:none;
+}
+#submit{
+    color:cadetblue;
+    background-color:navajowhite;
+    margin-left:20px;
+    width:10%;
+    height:25px;
+    border-radius:5px;
+}
+
+
+.radio{
+    display:flex;
+    justify-content:center;
+}
+
+label{
+    margin-left:-300px;
+}
+
+.checkbox1
+{
+    margin-left:-500px;
+}
+.check{
+    margin-left:-550px;
+}
+#display{
+    margin-top:50px;
+}
+
