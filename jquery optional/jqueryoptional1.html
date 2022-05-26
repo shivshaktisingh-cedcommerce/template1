@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jqueryoptional1.js"></script>
+    <script src="jqueryoptional2.js"></script>
+    <link rel="stylesheet" href="jqueryoptional1.css">
+</head>
+<body>
+    <div id="outer">
+       
+       
+        <div id="inner">
+            <h2>Registration Form for New User</h2>
+            
+           
+            <table id="registrationTable">
+                <tr><td class="half">Id:</td><td class="full"><input type="text" id="idofid" placeholder="Enter your id"></td></tr>
+                <tr><td class="half">First name:</td><td class="full"><input type ="text" id="fname" placeholder="Enter your first name"></td></tr>
+                <tr><td class="half">Last Name:</td><td class="full"><input type ="text" id="lname" placeholder="Enter your last name"></td></tr>
+                <tr><td class="half">Password:</td><td class="full"><input type ="text" id="password" placeholder="type your password here"></td></tr>
+                <tr><td class="half">confirm password:</td><td class="full"><input type ="text" id="confirm_password" placeholder="type your pasword again"></td></tr>
+                <tr><td class="half">Contact:</td><td class="full"><input type ="text" id="contact" placeholder="Enter your contact number"></td></tr>
+                <tr><td class="half">Email:</td><td class="full"><input type="email" id="email" placeholder="enter your email here"> </td></tr>
+                <tr><td class="half">Usertype:</td><td><select id="user_type">
+                    <option>--Select User Type--</option>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option></td></tr>
+            </table>
+            <button class="button-54" role="button" onclick="pushdata();" id="submit">Submit</button>
+            </div>
+            
+            <div id="logindiv">
+                <h2 id="loginHeadingId">Login here</h2>
+                <table id="logintable">
+                    <tr><td >Email:</td><td><input type="email" id="loginemail" placeholder="enter your email here"> </td></tr>
+                    <tr><td >Password:</td><td ><input type ="text" id="loginpassword" placeholder="type your password here"></td></tr>
+                </table>
+                <button class="button-54" role="button" onclick="authentication();" id="login">Login</button>
+                
+            </div>
+            <div id="welcomemsg">
+                <table id="tableData">
+                    <thead>
+                        <th>ID</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Password</th>
+                        <th>Confirm Password</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>User Type</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody id="data"></tbody>
+
+                </table>
+            </div>   
+        </div>
+    
+    
+</body>
+</html>
