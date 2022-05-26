@@ -1,0 +1,145 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="advanced.css">
+      <script src="advanced.js"></script>
+    </head>
+    <body onload="objectcall()">
+        <div class="outer">
+
+               <!-------------------------------------Task 1 of advanced js------------------------------------------->
+
+            
+              <div class="task1">
+                <table><tr><td>
+                <label for="ID">ID:</label></td>
+               <td> <input type="number" id="id1" name="ID"></td></tr>
+                <br>
+                <tr><td><label for="Name">Name:</label></td>
+               <td><input type="text" id="Name1" name="Name"></td></tr>
+                <br>
+               <tr><td> <label for="salary">Basic Sal:</label></td>
+               <td><input type="number" id="salary1" name="salary"></td></tr>
+                </table>
+                <br>
+                <button onclick="addEntriesByUser()">ADD</button>
+                <br>
+                <table id="firstTask">
+                  <thead id="displayHeadingTable">
+                    <tr>
+                     <!--- <td>ID</td>
+                      <td>Name</td>
+                      <td>Salary</td>-->
+                    </tr>
+                  </thead>
+                  <tbody id="displayTable">
+                  </tbody>
+                </table>
+              </div>
+
+
+              <!-----------------------------------task 2 of advanced js------------------------------------------------>   
+
+              <div class="task2">
+                <table>
+                  <thead id="task2displayHeadingTable">
+                  </thead>
+                  <tbody id ="objectTable">
+                  </tbody>
+                </table>
+              </div>
+
+
+                    <!--------------------------------task 3 starts here of advanced js--------------------------------------->
+
+           
+              <div class="task3">
+                <p id="demo"></p>
+              </div>
+
+            <!-------------------------------------task 4 starts here of advanced js-------------------------------->
+                 
+              <div class="task4">
+                <p id="this"></p>
+              </div>
+            <!-------------------------------------------task 5 starts here of advanced js---------------------------------->
+
+            <div class="task5">
+              <table>
+                <thead id="updatedSalaryHeadingTable">
+                </thead>
+                <tbody id ="updatedSalaryTable">
+                </tbody>
+              </table>
+              <button onclick="errorH()">check error </button>
+              <p id="demo1"></p>
+            </div>
+
+                <!--------------------------------------------task 6 starts here---------------------------------------------->
+
+
+            <div class="task6">
+              <button onclick="salaryPercentage()">15% salary of employee </button>
+              <table>
+                <thead id="percentHeadingTable">
+                </thead>
+                <tbody id ="percentSalaryTable">
+                </tbody>
+              </table>
+            </div>
+
+
+               <!---------------------------------------------task 7 starts here-------------------------------------------->
+
+            <div class="task7">
+             
+              <p id="demo2"></p>
+            </div>
+            <script type="module">
+              import { id ,name, salary } from "./separate.js";
+             
+                let text = "My id is " + id + ", My name is " + name + ", My Salary is " + salary + "";
+                document.getElementById("demo2").innerHTML = text;
+              
+              
+            </script>
+            
+
+                <!---------------------------------------------task 8 starts here------------------------------------------->
+
+            <div class="task8">
+              
+              <button onclick="debuggingFunction()">Debugging Function </button>
+              <p id="demo3"></p>
+            </div>
+       
+
+
+                 <!------------------------------------------task 9 starts here-------------------------------------------->
+
+                 <div class="task9">
+                  <table><tr><td>
+                    <label for="ID">ID:</label></td>
+                   <td> <input type="number" id="id1" name="ID"></td></tr>
+                    <br>
+                    <tr><td><label for="Name">Name:</label></td>
+                   <td><input type="text" id="Name1" name="Name"></td></tr>
+                    <br>
+                   <tr><td> <label for="salary">Basic Sal:</label></td>
+                   <td><input type="number" id="salary1" name="salary"></td></tr>
+                    </table>
+                   <button onclick="addCheckDetails()">ADD</button>
+                   <p id="demo4"></p>
+                 </div>
+
+                 <!------------------------------------------task 10 start here-------------------------------------------->
+
+                 <div class="task10">
+                  <table>
+                    <tbody id ="useStrictTable">
+                    </tbody>
+                  </table>
+                   <button onclick="useStrictHere()">Use Strict</button>
+                 </div>
+          </div>
+    </body>
+</html>
